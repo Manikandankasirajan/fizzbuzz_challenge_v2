@@ -13,4 +13,7 @@ describe("Test cases for FizzBuzz program", () => {
 	test("return the number if the number is not divisible by 3 or 5", () => {
 		expect(fizzbuzz(1)).toBe(1);
 	});
+	test('return "FizzBuzz" if the number is 0 since 0 is divisible by both 3 and 5', () => {
+		expect(fizzbuzz(0)).toBe("FizzBuzz");
+	});
 });
