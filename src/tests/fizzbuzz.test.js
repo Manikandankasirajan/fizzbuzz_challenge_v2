@@ -19,15 +19,12 @@ describe("Test cases for FizzBuzz program", () => {
 	test('return "FizzBuzz" if the number is 0 since 0 is divisible by both 3 and 5', () => {
 		expect(fizzbuzz(0)).toBe("FizzBuzz");
 	});
-	test('return "Fizz" if any negative number is divisible by 3', () => {
+	test("test case to handle negative inputs", () => {
 		expect(fizzbuzz(-3)).toBe("Fizz");
-	});
-	test('return "Buzz" if negative number is divisible by 5', () => {
 		expect(fizzbuzz(-5)).toBe("Buzz");
-	});
-	test('return "FizzBuzz" if negative number is divisible by both 3 and 5', () => {
 		expect(fizzbuzz(-15)).toBe("FizzBuzz");
 	});
+
 	test("return FizzBuzz sequence between any given range", () => {
 		const result = [];
 		for (let index = 1; index <= 15; index++) {
