@@ -1,5 +1,11 @@
-function fizzbuzz(num) {
-	return num % 3 === 0 ? "Fizz" : null;
-}
+import fizzRule from "./rules/fizzRules";
 
-export default fizzbuzz;
+export default function fizzbuzz(num) {
+	const rules = [fizzRule];
+	for (const rule of rules) {
+		const result = rule(num);
+		if (result) {
+			return result;
+		}
+	}
+}
