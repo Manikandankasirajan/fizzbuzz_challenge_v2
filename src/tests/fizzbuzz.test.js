@@ -22,4 +22,7 @@ describe("Test cases for FizzBuzz program", () => {
 	test('return "Buzz" if negative number is divisible by 5', () => {
 		expect(fizzbuzz(-5)).toBe("Buzz");
 	});
+	test('return "FizzBuzz" if negative number is divisible by both 3 and 5', () => {
+		expect(fizzbuzz(-15)).toBe("FizzBuzz");
+	});
 });
