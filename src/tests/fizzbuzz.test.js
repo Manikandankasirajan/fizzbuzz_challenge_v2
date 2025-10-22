@@ -28,4 +28,27 @@ describe("Test cases for FizzBuzz program", () => {
 	test('return "FizzBuzz" if negative number is divisible by both 3 and 5', () => {
 		expect(fizzbuzz(-15)).toBe("FizzBuzz");
 	});
+	test("return FizzBuzz sequence between any given range", () => {
+		const result = [];
+		for (let index = 1; index <= 15; index++) {
+			result.push(fizzbuzz(index));
+		}
+		expect(result).toStrictEqual([
+			1,
+			2,
+			"Fizz",
+			4,
+			"Buzz",
+			"Fizz",
+			7,
+			8,
+			"Fizz",
+			"Buzz",
+			11,
+			"Fizz",
+			13,
+			14,
+			"FizzBuzz",
+		]);
+	});
 });
