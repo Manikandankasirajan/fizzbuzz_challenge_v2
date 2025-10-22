@@ -51,4 +51,7 @@ describe("Test cases for FizzBuzz program", () => {
 			"FizzBuzz",
 		]);
 	});
+	test("return Error Message for invalid input", () => {
+		expect(fizzbuzz("15")).toBe("Invalid Input");
+	});
 });
